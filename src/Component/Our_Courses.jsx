@@ -1,4 +1,4 @@
-import React from 'react'
+
 import Our_CourseProps from './Our_CourseProps';
 
 import Image1 from "../assets/Image (1).png"
@@ -6,8 +6,7 @@ import Image2 from "../assets/Image (2).png";
 import Image3 from "../assets/Image (3).png";
 
 import Image4 from "../assets/Image (4).png";
-import Image5 from "../assets/Image (5).png";
-import Image6 from "../assets/Image (1).png";
+
 
 
 const Our_Courses = () => {

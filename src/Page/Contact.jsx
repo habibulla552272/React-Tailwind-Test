@@ -1,4 +1,4 @@
-import React from 'react'
+
 import Section2 from './../Component/Section2';
 
 const Contact = () => {
