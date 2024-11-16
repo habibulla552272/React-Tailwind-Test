@@ -8,9 +8,9 @@ const Navbar = () => {
       <div className="Container mx-auto">
         <div className="flex justify-between py-5 px-10">
           <div className="flex items-center gap-10">
-            <img src={Logo} alt="" />
+            <img className='flex justify-center md:justify-start' src={Logo} alt="" />
 
-            <ul className="flex gap-5">
+            <ul className="hidden md:flex  md:gap-5 md:flex-row">
               <li>
                 <Link to="/">Home</Link>
               </li>
@@ -22,7 +22,7 @@ const Navbar = () => {
               </li>
             </ul>
           </div>
-          <div className="flex gap-3">
+          <div className="hidden md:flex md:gap-3">
             <button>Sign up</button>
             <button className="px-8 py-3 bg-primary text-white rounded-md">
               Login

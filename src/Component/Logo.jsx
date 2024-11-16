@@ -13,9 +13,8 @@ const Logo = () => {
       <div className="container mx-auto ">
         <div className="flex justify-between px-10 py-5 bg-white">
           <img src={Logo1} alt="" />
-
           <img src={Logo2} alt="" />
-          <img src={Logo3} alt="" />
+          <img className='hidden md:block' src={Logo3} alt="" />
           <img className="hidden md:block" src={Logo4} alt="" />
           <img className="hidden md:block" src={Logo5} alt="" />
           <img className="hidden md:block" src={Logo6} alt="" />
