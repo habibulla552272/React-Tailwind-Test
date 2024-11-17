@@ -6,14 +6,14 @@ const Hero = () => {
       <div className="container mx-auto flex justify-center text-center">
         <div>
           <div>
-            <h2 className="text-3xl py-4">
+            <h2 className="text-xl md:text-3xl py-4">
               <span className="text-primary">Unlock</span> Your Creative
               Potential
             </h2>
-            <h3 className="text-2xl">
+            <h3 className="text-xl md:text-2xl w-11/12 mx-auto">
               with Online Design and Development Courses.
             </h3>
-            <p>Learn from Industry Experts and Enhance Your Skills.</p>
+            <p className='w-11/12 mx-auto md:w-fit'>Learn from Industry Experts and Enhance Your Skills.</p>
           </div>
           <div className="flex justify-center  gap-3 py-6">
             <button className="bg-primary py-3 px-7">Explore Courses</button>

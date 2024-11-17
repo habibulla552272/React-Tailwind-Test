@@ -1,4 +1,5 @@
 
+import ContactSection from '../Component/ContactSection';
 import Section2 from './../Component/Section2';
 
 const Contact = () => {
@@ -6,6 +7,7 @@ const Contact = () => {
     <>
 
         <Section2 />
+        <ContactSection />
     
     </>
   )

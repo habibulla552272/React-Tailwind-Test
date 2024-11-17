@@ -4,8 +4,8 @@ import { FaArrowRight } from "react-icons/fa";
 const Header = () => {
   return (
     <section className='bg-gray-300'>
-      <div className="bg-primary text-center flex items-center gap-3 justify-center py-5">
-        <h2 className="font-font_1">
+      <div className="bg-primary flex items-center gap-3 justify-center py-5 ">
+        <h2 className="font-font_1 text-sm md:text-xl">
           Free Courses 🌟 Sale Ends Soon, Get It Now
         </h2>
         <p>
