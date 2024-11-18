@@ -1,16 +1,35 @@
-import React from 'react'
-import {Link} from "react-router-dom";
-import Logo from '../assets/Logo.png'
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
+import Logo from "../assets/Logo.png";
+import { IoMenu } from "react-icons/io5";
+
+import { RiCloseLargeFill } from "react-icons/ri";
 
 const Navbar = () => {
+  const [Menu, StateMenu] = useState(false);
+  const menuShow = () => {
+    StateMenu(!Menu);
+  };
+  
+
   return (
-    <section className='bg-gray-300'>
+    <section className="bg-gray-300">
       <div className="Container mx-auto">
         <div className="flex justify-between py-5 px-10">
           <div className="flex items-center gap-10">
-            <img className='flex justify-center md:justify-start' src={Logo} alt="" />
+            <img
+              className="flex justify-center md:justify-start"
+              src={Logo}
+              alt=""
+            />
 
-            <ul className="hidden md:flex  md:gap-5 md:flex-row">
+            <ul
+              className={`md:flex md:space-y-0 md:gap-8  md:static ${
+                Menu
+                  ? "absolute top-14 left-0 space-y-6 duration-500  bg-black text-white h-56 w-36 flex flex-col items-center justify-center opacity-80"
+                  : "absolute top-14 -left-40 ]"
+              }`}
+            >
               <li>
                 <Link to="/">Home</Link>
               </li>
@@ -22,9 +41,15 @@ const Navbar = () => {
               </li>
             </ul>
           </div>
-          <div className="hidden md:flex md:gap-3">
+          <div
+            onClick={menuShow}
+            className="md:hidden flex items-center  text-4xl"
+          >
+            {Menu ? <RiCloseLargeFill /> : <IoMenu />}
+          </div>
+          <div className="flex items-center gap-3">
             <button>Sign up</button>
-            <button className="px-8 py-3 bg-primary text-white rounded-md">
+            <button className="md:px-8 md:py-3 px-3 h-10 flex items-center bg-primary text-white rounded-md">
               Login
             </button>
           </div>
@@ -32,6 +57,6 @@ const Navbar = () => {
       </div>
     </section>
   );
-}
+};
 
-export default Navbar
+export default Navbar;
